@@ -11,3 +11,10 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+style/mystyle.css.map
+img/
+Gruntfile.js
+package.json
+node_modules/
+.sass-cache/
