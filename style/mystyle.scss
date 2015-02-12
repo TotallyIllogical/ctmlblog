@@ -14,6 +14,7 @@ $sidebar-link: darken($sidebar-bg, 50%);
 // Bootstrap variable overrides
 $body-bg: $body-background;
 $link-color: $linkcolor;
+$link-hover-color: darken($link-color, 15%);
 
 $navbar-default-bg: $navbar-bg;
 $navbar-default-link-color: $navbar-text;
@@ -30,6 +31,16 @@ $well-bg: $sidebar-bg;
 $nav-link-hover-bg: lighten($sidebar-bg, 10%);
 $nav-pills-active-link-hover-color: $sidebar-link;
 
+$pagination-color: $navbar-text;
+$pagination-bg: $navbar-bg;
+$pagination-border: darken($pagination-bg, 15%);
+$pagination-hover-color: $navbar-text;
+$pagination-hover-bg: $navbar-default-link-hover-bg;
+$pagination-hover-border:  $pagination-border;
+$pagination-active-color: $navbar-default-link-active-color;
+$pagination-active-bg: $navbar-default-link-active-bg;
+$pagination-active-border: $pagination-border;
+
 //Basic
 body {
 	background-color: $body-bg !important;
@@ -38,8 +49,15 @@ body {
 	max-width: 1000px;
 	padding: 0;
 }
+a {
+	font-weight: bold;
+}
 
 //Header
+#menu-topmenu a{
+	text-transform: uppercase;
+}
+
 .my-nav-box {
 	background-color: $header-bg;
 	background-image: url("../img/header_bg.png");
@@ -79,7 +97,7 @@ body {
 	border: 0 !important;
 }
 
-.topmenu-selected {
+.current_page_item, .current-menu-item {
 	background-color: $header-bg;
 	color:$navbar-active-text;
 	a {
@@ -95,9 +113,7 @@ body {
 	padding: 20px;
 	background-color: white;
 	margin:0;
-}
-.footer {
-	background-color: white;
+	height: 100%;
 }
 
 //Sidebar
@@ -108,3 +124,6 @@ body {
 }
 
 //Footer
+.footer {
+	background-color: white;
+}

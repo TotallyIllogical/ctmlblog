@@ -31,9 +31,11 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                           <?php wp_list_pages(array('title_li' => '')); ?>
-                        </ul>
+                            <?php 
+                                if ( has_nav_menu( 'primary' ) ) :
+                                    wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav' ) );
+                                endif; 
+                            ?> 
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
