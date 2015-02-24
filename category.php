@@ -9,11 +9,8 @@
                 <?php the_title( '<h2><a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="bookmark"> ',  '</a></h2>' ); ?>
                 <?php the_excerpt(); ?> <a href="<?php the_permalink();?>">Read more</a>
             <?php endwhile; ?>
-                <?php
-                if ( function_exists( 'vb_pagination' ) ) {
-                    vb_pagination();
-                    }
-                ?>
+            <hr>
+            <?php echo paginate_links( $args ); ?>
             <?php else: ?>
                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
             <?php endif; ?>

@@ -7,7 +7,14 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php the_title( '<h2><a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="bookmark"> ',  '</a></h2>' ); ?>
                 <?php the_excerpt(); ?> <a href="<?php the_permalink();?>">Read more</a>
-            <?php endwhile; else: ?>
+            <?php endwhile; ?>
+
+            <hr>
+            <?php echo paginate_links( $args ); ?>
+
+            <?php wp_reset_postdata(); ?>
+
+            <?php else: ?>
                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
             <?php endif; ?>
         </div>
