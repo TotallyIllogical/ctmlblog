@@ -12,7 +12,6 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 
-style/mystyle.css.map
 img/
 node_modules/
 .sass-cache/

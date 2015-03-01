@@ -28,7 +28,7 @@ $navbar-default-toggle-hover-bg: lighten($navbar-bg, 10%);
 $navbar-default-toggle-icon-bar-bg: darken($navbar-bg, 50%);
 $navbar-default-toggle-border-color: black;
 
-$well-bg: $sidebar-bg;
+$well-bg: $sidebar-bg !important;
 $nav-link-hover-bg: lighten($sidebar-bg, 10%);
 $nav-pills-active-link-hover-color: $sidebar-link;
 
