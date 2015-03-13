@@ -1,4 +1,5 @@
-@import"../assets/stylesheets/bootstrap/_variables.scss";
+// @import"../assets/stylesheets/bootstrap/_variables.scss";
+
 
 //My variables
 $body-background: #ddc9df;
@@ -28,7 +29,7 @@ $navbar-default-toggle-hover-bg: lighten($navbar-bg, 10%);
 $navbar-default-toggle-icon-bar-bg: darken($navbar-bg, 50%);
 $navbar-default-toggle-border-color: black;
 
-$well-bg: $sidebar-bg !important;
+$well-bg: $sidebar-bg ;
 $nav-link-hover-bg: lighten($sidebar-bg, 10%);
 $nav-pills-active-link-hover-color: $sidebar-link;
 
@@ -44,7 +45,7 @@ $pagination-active-border: $pagination-border;
 
 //Basic
 body {
-	background-color: $body-bg !important;
+	background-color: $body-bg;
 }
 .container {
 	max-width: 1000px;
@@ -55,7 +56,7 @@ a {
 }
 
 //Header
-#menu-topmenu a{
+.menu-topmenu-container a{
 	text-transform: uppercase;
 }
 
