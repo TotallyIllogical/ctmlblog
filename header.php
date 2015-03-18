@@ -3,7 +3,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="My Site">
         <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
