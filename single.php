@@ -8,6 +8,8 @@
                 
                 <h1><?php the_title(); ?></h1>  
                 <?php the_content(); ?>
+                <?php //comment_form(); ?>
+                <?php //get_comments(); ?>
             <?php endwhile; else: ?>
                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
             <?php endif; ?>

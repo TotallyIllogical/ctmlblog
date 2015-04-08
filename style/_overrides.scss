@@ -1,13 +1,13 @@
 //My variables
 $body-background: #ddc9df;
-$linkcolor: #7a3aaf;
+$linkcolor: #7A4BAC;
 $header-bg: #ff9763;
-$navbar-bg: #7a3aaf;
+$navbar-bg: #7A4BAC;
 $navbar-text: white;
 $navbar-active-bg: $header-bg;
 $navbar-active-text: $navbar-bg;
-$sidebar-bg: #be89e1;
-$sidebar-link: darken($sidebar-bg, 50%);
+$sidebar-bg: #B393D6;
+$sidebar-link: #431870;
 
 // Bootstrap variable overrides
 $body-bg: $body-background;
@@ -26,9 +26,11 @@ $navbar-default-toggle-hover-bg: lighten($navbar-bg, 10%);
 $navbar-default-toggle-icon-bar-bg: darken($navbar-bg, 50%);
 $navbar-default-toggle-border-color: black;
 
-$well-bg: $sidebar-bg ;
-$nav-link-hover-bg: lighten($sidebar-bg, 10%);
-$nav-pills-active-link-hover-color: $sidebar-link;
+$well-bg: $sidebar-bg;
+
+$font-family-sans-serif: "Lora", Helvetica, Arial, sans-serif;
+$font-family-serif: "Ubuntu", "Times New Roman", Times, serif;
+$headings-font-family: $font-family-serif; 
 
 $pagination-color: $navbar-text;
 $pagination-bg: $navbar-bg;
@@ -59,26 +61,6 @@ a {
 
 .my-nav-box {
 	background-color: $header-bg;
-	background-image: url("../img/header_bg.png");
-	background-repeat: no-repeat;
-}
-
-#my-container {
-	padding: 0;
-}
-
-#my-img {
-	position: relative;
-	padding: 7px 7px 5px 15px;
-	z-index: 2;
-	max-width: 100%;
-	height: auto;
-}
-#my-logo {
-	position: relative;
-	z-index: 2;
-	max-width: 100%;
-	height: auto;
 }
 
 .navbar {
@@ -94,6 +76,7 @@ a {
 }
 .navbar, .navbar-default  {
 	border: 0 !important;
+	font-family: "Ubuntu", "Times New Roman", Times, serif;
 }
 
 .current_page_item, .current-menu-item {
@@ -117,6 +100,9 @@ a {
 
 //Sidebar
 .widget {
+	a {
+		color: $sidebar-link;
+	}
 	h1,h2,h3,h4,h5,h6{
 		color: white;
 	}
@@ -132,7 +118,7 @@ a {
 		font-size: 16px;
 		padding: 2px 10px;
 		color: $navbar-default-link-color;
-		background-color: $navbar-default-bg;
+		background-color: $sidebar-link;
 		font-weight: bold;
 		border: none;
 	}
