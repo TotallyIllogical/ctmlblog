@@ -1,3 +1,9 @@
+/*
+Purple: 7A4BAC 654B81 431870 A77BD6 B393D6
+Orange: FF9863 BF8568 A64D20 FFB18A FFC6A9
+
+*/
+
 //My variables
 $body-background: #ddc9df;
 $linkcolor: #7A4BAC;
@@ -53,6 +59,11 @@ body {
 a {
 	font-weight: bold;
 }
+hr {
+	border-top: 1px solid $linkcolor !important;
+	background-color: $linkcolor;
+	color: $linkcolor;
+}
 
 //Header
 .menu-topmenu-container a{
@@ -96,6 +107,27 @@ a {
 	background-color: white;
 	margin:0;
 	height: 100%;
+}
+.datetime {
+	color: #777;
+	font-size: 14px;
+}
+p.comment-form-comment{
+	label {
+		display: none;
+	}
+
+}
+.comment-list{
+	list-style-type: none;
+}
+input[value="Post Comment"]{
+	font-size: 16px;
+	padding: 2px 10px;
+	color: $navbar-default-link-color;
+	background-color: $sidebar-link;
+	font-weight: bold;
+	border: none;
 }
 
 //Sidebar
