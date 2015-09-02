@@ -1,19 +1,14 @@
-/*
-Purple: 7A4BAC 654B81 431870 A77BD6 B393D6
-Orange: FF9863 BF8568 A64D20 FFB18A FFC6A9
-
-*/
 
 //My variables
-$body-background: #ddc9df;
-$linkcolor: #7A4BAC;
-$header-bg: #ff9763;
-$navbar-bg: #7A4BAC;
+$body-background: #beb2ce;
+$linkcolor: #2cbda1;
+$header-bg: #000;
+$navbar-bg: #6c6ea0;
 $navbar-text: white;
 $navbar-active-bg: $header-bg;
 $navbar-active-text: $navbar-bg;
-$sidebar-bg: #B393D6;
-$sidebar-link: #431870;
+$sidebar-bg: white;
+$sidebar-link: $linkcolor;
 
 // Bootstrap variable overrides
 $body-bg: $body-background;
