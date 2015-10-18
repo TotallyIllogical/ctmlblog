@@ -8,12 +8,11 @@
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <?php wp_enqueue_script("jquery"); ?>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <?php wp_head(); ?>
     </head>
-    <div class="container">
-            <img src="<?php echo get_bloginfo('template_url') ?>/img/header_bloglogo.png" class="img-responsive">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -21,14 +20,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand visible-xs" href="#">Code To My Life</a>
+                    <p class="navbar-brand"> <?php bloginfo( $show ); ?> </p>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse">
                         <?php 
                             if ( has_nav_menu( 'primary' ) ) :
-                                wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav' ) );
+                                wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) );
                             endif; 
                         ?> 
                 </div><!-- /.navbar-collapse -->

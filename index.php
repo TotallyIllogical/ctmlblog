@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <body>
-    <div class="content">
+    <div class="content container">
     <div class="row">
         <div class="col-sm-8">
 
@@ -11,7 +11,9 @@
             <?php endwhile; ?>
 
             <hr>
-            <?php echo paginate_links( $args ); ?>
+            <div class="page-links">
+                <?php echo paginate_links( $args ); ?>
+            </div>
 
             <?php wp_reset_postdata(); ?>
 

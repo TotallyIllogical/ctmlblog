@@ -7,6 +7,7 @@
 <div class="comments">
 
 	<?php if ( have_comments() ) : ?>
+		<hr>
 		<h2>
 			<?php
 				printf( _nx( '&ldquo;%2$s&rdquo; has one comment', '&ldquo;%2$s&rdquo; has %1$s comments', get_comments_number(), 'comments title' ),

@@ -1,14 +1,14 @@
-
+@import "../assets/stylesheets/bootstrap/variables";
 //My variables
-$body-background: #beb2ce;
+$body-background: white;
 $linkcolor: #2cbda1;
 $header-bg: #000;
 $navbar-bg: #6c6ea0;
 $navbar-text: white;
-$navbar-active-bg: $header-bg;
-$navbar-active-text: $navbar-bg;
-$sidebar-bg: white;
-$sidebar-link: $linkcolor;
+$navbar-active-bg: darken($navbar-bg, 10%);
+$navbar-active-text: white;
+$sidebar-bg: #c7c8db;
+$sidebar-link: #565672;
 
 // Bootstrap variable overrides
 $body-bg: $body-background;
@@ -18,10 +18,13 @@ $font-size-base: 16px;
 
 $navbar-default-bg: $navbar-bg;
 $navbar-default-link-color: $navbar-text;
-$navbar-default-link-hover-color: $navbar-text;
-$navbar-default-link-hover-bg: lighten($navbar-default-bg, 10%);
+$navbar-default-link-hover-color: darken($navbar-default-bg, 10%);
+$navbar-default-link-hover-bg: lighten($navbar-bg, 10%);
 $navbar-default-link-active-color: $navbar-active-text;
 $navbar-default-link-active-bg: $navbar-active-bg;
+
+$navbar-default-brand-color: $navbar-text;
+$navbar-default-brand-hover-color: $navbar-text;
 
 $navbar-default-toggle-hover-bg: lighten($navbar-bg, 10%);
 $navbar-default-toggle-icon-bar-bg: darken($navbar-bg, 50%);
@@ -74,6 +77,8 @@ hr {
 }
 .navbar-default {
 	border-radius: 0px !important;
+	text-transform: uppercase;
+	font-family: "Ubuntu", "Times New Roman", Times, serif;
 }
 .nav .navbar-nav{
 	li {
@@ -86,7 +91,7 @@ hr {
 }
 
 .current_page_item, .current-menu-item {
-	background-color: $header-bg;
+	background-color: $navbar-active-bg;
 	color:$navbar-active-text;
 	a {
 		color: $navbar-active-text !important;
@@ -96,10 +101,17 @@ hr {
 	}
 }
 
+p.navbar-brand {
+	@media (min-width: $screen-sm) {
+		font-size: 40px;
+	}
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
 //content
 .content {
 	padding: 20px;
-	background-color: white;
 	margin:0;
 	height: 100%;
 }
@@ -123,6 +135,9 @@ input[value="Post Comment"]{
 	background-color: $sidebar-link;
 	font-weight: bold;
 	border: none;
+}
+.page-links{
+	padding-bottom: 30px;
 }
 
 //Sidebar
